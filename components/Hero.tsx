@@ -34,17 +34,13 @@ const Hero = () => {
                         React.js, Node.js, and MongoDB, along with
                         cross-platform app development using React Native.
                     </div>
-                    <button
+                    <Link
                         className="flex items-center justify-center gap-3 bg-white rounded-full w-fit text-black px-4 py-2 hover:bg-zinc-200"
-                        onClick={() =>
-                            window.open(
-                                "https://ramprakash-resume.tiiny.site/",
-                                "_blank"
-                            )
-                        }
+                        href={"https://ramprakash-resume.tiiny.site/"}
+                        target="_blank"
                     >
                         My resume <FaPaperPlane />
-                    </button>
+                    </Link>
                 </motion.div>
             </AuroraBackground>
         </div>
