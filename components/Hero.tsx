@@ -7,6 +7,9 @@ import { FaPaperPlane } from "react-icons/fa";
 import { AuroraBackground } from "./ui/aurora-background";
 
 const Hero = () => {
+    if (typeof window === "undefined") {
+        return null; // Prevent rendering on the server
+    }
     return (
         <div className="w-full" id="home">
             <AuroraBackground>
